@@ -1,72 +1,73 @@
-# 2324-pp-10th-grade-assignment-template
+# 2324-10th-grade-individual-assignment
 
-## Project Planning and Requirements Gathering:
-1. Define the scope of the project.
-2. Gather requirements: What functionalities should the ship management system have? User management, ship registration, maintenance tracking, crew management, scheduling, etc.
-3. Design the database schema.
-4. Setting Up the Development Environment:
-5. Install necessary tools and libraries (Python, SSMS, etc.).
-6. Create a new project directory.
+## Library Managment System
+This document describes the OTJ project for 10th graders. **It will be updated frequently**.
 
-## Backend Development:
-1. Implement the server-side logic using Python.
-2. Set up the database connection and create necessary tables.
-3. Implement CRUD (Create, Read, Update, Delete) operations for managing ships, crews, maintenance, etc.
-4. Implement authentication and authorization for user management.
+## 1. Assignment Goals
+A library management system (LMS) aims to automate all library activities. It is a software that helps manage all the primary functions of library management. With the help of a library management system, we can organize, handle, and maintain the record of numerous books and the members in a comprehensive and systematic way.
 
-## Frontend Development:
-1. Design and develop the user interface using HTML, CSS, and JavaScript.
-2. Implement forms for user input and interaction.
-3. Use AJAX for asynchronous communication with the backend.
+A librarian can use this software to track the number of books in the library. They can also use it to retain several records including, the new books, borrowed books with due dates, the member who borrowed books, returned books, fine on the late returned books, etc. In short, the library management system stores and updates the complete library database.
 
-## Integration:
-1. Integrate the frontend with the backend.
-2. Ensure proper communication between frontend and backend components.
+LMS also supports maintaining the physical library. The user can keep track of the position of the book in the library and can search for whether or not the specific book is currently available in the library. Therefore, LMS helps organize and retrieve library data in an efficient manner.
 
-## Testing:
-1. Write unit tests for backend components.
-2. Perform manual testing of the frontend and backend functionalities.
+## 2. Expectations from the interviewee
+There are multiple components of the LMS, each with its own specific requirements and constraints. Let’s look at some of the main expectations that the interviewer will want to hear you discuss in more detail during the interview.
 
-## Deployment:
-1. Deploy the application to a web server or a cloud platform (e.g., Heroku, AWS).
-2. Set up the database in the production environment.
+### 2.1. Efficient searching
+Searching for books is one of the most crucial functions of LMS. The user must be able to search for any book. Different users may want to search for a book through different methods. Therefore, the interviewer can ask questions like these:
+* Would the user be able to search for a book using attributes other than the book name?
+* How will the user be able to search for a book by its author name, publication date, etc.?
+* How will the user search a specific category of books like magazines, journals, newspapers, etc.?
 
-## Documentation:
-1. Document the project, including installation instructions, usage guide, and code documentation.
+### 2.2. Versatility
+Before designing the system, it is mandatory to specify the actors of the system. Hence, the interviewer can ask about the actors of the system as follows:
+* Can the software only be used by a librarian or by all library members?
 
+### 2.3. Book reservation
+Another significant feature of LMS is the reservation of the book.
+* What is the mechanism of book reservation?
+* Can a member reserve a book again if it is already reserved?
+* How does the status of the book change when a member returns a book?
 
+### 2.4. Book renewal
+Similar to the book reservation, the interviewer can ask about the book renewal functionality with a question like this:
+* What is the mechanism of book renewal if a member wants to hold a book for a longer period of time?
 
+### 2.5. Fine management
+There is another question that the interviewer may be interested to ask:
+* How is the calculation and deduction of fines handled if the book is returned late?
 
-<br>
-Great! Based on your requirements, here's a more detailed breakdown of the functionalities and features we'll need to implement for your ship management system:
-User Management:
-Registration: Users can create their own accounts with a unique username.
-Authentication: Users can log in securely to access the system.
-Authorization: Different roles (captain, co-captain, crew) with different permissions.
-Task Management:
-Create Task: Captains can create tasks and assign them to crew members.
-Assign Roles: Specify the role of each crew member (captain, co-captain, crew) when assigning tasks.
-View Tasks: Users can see the tasks assigned to them.
-Update Task Status: Users can mark tasks as completed.
-Remove Task: Only captains and co-captains can remove tasks.
-Database Management:
-Store user accounts (username, password, role).
-Store tasks (task name, description, assigned user, status).
-Frontend Development:
-User interface for registration, login, and task management.
-Forms for creating tasks, assigning roles, and updating task status.
-Display tasks assigned to each user.
-Backend Development:
-Implement user authentication and authorization.
-Create endpoints for user registration, login, and task management.
-Implement CRUD operations for tasks.
-Validate user roles to ensure only captains and co-captains can perform certain actions.
-Integration:
-Connect the frontend and backend components to enable seamless communication.
-Ensure proper validation and error handling.
-Testing:
-Write unit tests for backend functionality.
-Perform manual testing to ensure all features work as expected.
-Deployment:
-Deploy the application to a web server or cloud platform.
-Set up the database in the production environment.
+## 3. Requirements for the Library Management System
+For LMS (Library Management System), the requirements have been defined below:
+
+### Stage One 
+* R1: The system should be able to store the information about books and members of the library. Moreover, the complete log of the book borrowing process should also be stored.
+* R2: Every book is supposed to have a unique identification number and other details including a rack number to help locate the book physically.
+* R3: Every book should have an associated ISBN, title, author name, subject, and publication date.
+
+### Stage Two 
+* R4: There can be multiple copies of the book. Each copy will be recognized as a book item.
+* R5: There can be two types of users, i.e., the librarian and the members.
+* R6: Every user must have a library card with a unique card number.
+
+### Stage Three 
+* R7: One member can issue a maximum of 10 books at a time.
+* R8: The member can issue a book for a maximum of 15 days.
+* R9: Each book item can only be reserved by a single member.
+* R10: The system should be able to keep a record of who issued or reserved a particular book and on which date.
+
+### Stage Four 
+* R11: The system should allow the user to renew the reserved book.
+* R12: The system should send a notification if the book is not returned within the due date.
+* R13: If the book is currently not available, then the member should be able to reserve it for whenever it is available.
+* R14: The system should allow the user to search a book by its title, author name, subject, or publication date.
+
+## Base requirements
+
+* Programming language: C++
+* Visual Studio 2022 (latest release)
+* Git for Windows (latest release)
+* Skill for working with Git from command line (CLI) & Git extension in Visual Studio
+* Following the best practices for C++ / Git / GitHub is a mandatory requirement
+
+Additional requirements will be added later.
