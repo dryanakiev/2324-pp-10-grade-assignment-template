@@ -3,7 +3,7 @@ name: Create Issue from issue.md
 on:
   push:
     paths:
-      - '.github/workflows/Issues.md'  # Adjust this path according to your file location
+      - './Issues.md'  # Adjust this path according to your file location
 
 jobs:
   create-issue:
@@ -19,7 +19,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
-            const fileContent = fs.readFileSync('workflows/Issues.md', 'utf8'); // Adjusted path
+            const fileContent = fs.readFileSync('./Issues.md', 'utf8'); // Adjusted path
             const lines = fileContent.split('\n');
             const newItems = lines.filter(line => line.trim() !== ''); // Assuming each line is a new item
             console.log(JSON.stringify(newItems));
@@ -28,4 +28,4 @@ jobs:
         uses: peter-evans/create-issue-from-file@v3
         with:
           title: New item(s) added to Issues.md
-          content-filepath: './workflows/Issues.md'  # Adjusted path
+          content-filepath: './Issues.md'  # Adjusted path
