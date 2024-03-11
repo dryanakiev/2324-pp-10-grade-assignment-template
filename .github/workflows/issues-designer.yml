@@ -19,7 +19,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
-            const fileContent = fs.readFileSync('Issues.md', 'utf8');
+            const fileContent = fs.readFileSync('workflows/Issues.md', 'utf8');
             const lines = fileContent.split('\n');
             const newItems = lines.filter(line => line.trim() !== ''); // Assuming each line is a new item
             console.log(JSON.stringify(newItems));
@@ -28,5 +28,5 @@ jobs:
         uses: peter-evans/create-issue-from-file@v3
         with:
           title: New item(s) added to issue.md
-          content-filepath: './Issues.md'
+          content-filepath: './workflows/Issues.md'
         if: steps.read_file.outputs.return_value.length > 0  # Only create issue if there are new items
