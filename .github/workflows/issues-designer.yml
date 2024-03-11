@@ -1,9 +1,9 @@
-name: Create Issue from Issues.md
+name: Create Issue from issue.md
 
 on:
   push:
     paths:
-      - 'Issues.md'  # Adjust this path according to your file location
+      - 'workflows/Issues.md'  # Adjust this path according to your file location
 
 jobs:
   create-issue:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Read Issues.md file
+      - name: Read issue.md file
         id: read_file
         uses: actions/github-script@v4
         with:
@@ -29,4 +29,4 @@ jobs:
         with:
           title: New item(s) added to issue.md
           content-filepath: './workflows/Issues.md'
-        if: steps.read_file.outputs.return_value.length > 0  # Only create issue if there are new items
+        if: steps.read_file.outputs.return_value.length > 0
