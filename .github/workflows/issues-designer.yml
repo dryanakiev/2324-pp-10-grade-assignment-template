@@ -1,0 +1,14 @@
+            - name: Create an issue
+  uses: JasonEtco/create-an-issue@v2.9.2
+  with:
+    # GitHub handle of the user(s) to assign the issue (comma-separated)
+    assignees: # optional
+    # Number of the milestone to assign the issue to
+    milestone: # optional
+    # The name of the file to use as the issue template
+    filename: .github/Issues.md # optional, default is .github/ISSUE_TEMPLATE.md
+    # Update an open existing issue with the same title if it exists
+    update_existing: # optional
+    # Existing types of issues to search for (comma-separated)
+    search_existing: # optional, default is open
+          
