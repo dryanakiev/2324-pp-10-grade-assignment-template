@@ -8,4 +8,3 @@
 - Address performance issue on dashboard
 - Add dark mode support
 - Implement search functionality
-- Integrate with third-party APIs
