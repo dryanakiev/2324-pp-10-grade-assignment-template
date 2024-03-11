@@ -3,7 +3,7 @@ name: Create Issue from Issues.md
 on:
   push:
     paths:
-      - '.github/workflows/Issues.md'  # Adjust this path according to your file location
+      - 'Issues.md'  # Adjust this path according to your file location
 
 jobs:
   create-issue:
