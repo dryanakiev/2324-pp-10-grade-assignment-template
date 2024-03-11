@@ -1,0 +1,31 @@
+name: Create Issues from Tasks
+
+on:
+  push:
+    paths:
+      - 'tasks.md'  # Adjust this path according to your file location
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Read tasks from file
+        id: read_file
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const fileContent = fs.readFileSync('tasks.md', 'utf8');
+            const tasks = fileContent.split('\n').filter(line => line.trim() !== '');
+            console.log(tasks);
+
+      - name: Create issues
+        id: create_issues
+        run: |
+          for task in "${{ steps.read_file.outputs.result }}"; do
+            echo "::set-output name=issue_number::$(gh issue create --title "$task" --body "$task" --json number | jq -r .number)"
+          done
