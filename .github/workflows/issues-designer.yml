@@ -1,15 +1,32 @@
-name: Add Issue
+name: Create Issue from Issues.md
 
 on:
-  issues:
-    types: [opened]
+  push:
+    paths:
+      - '.github/workflows/Issues.md'  # Adjust this path according to your file location
 
 jobs:
-  add-issue:
+  create-issue:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Add Issue
-      run: |
-        echo "Adding issue to repository..."
-        cat .github/workflows/Issues.md >> $GITHUB_EVENT_PATH
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Read Issues.md file
+        id: read_file
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const fileContent = fs.readFileSync('Issues.md', 'utf8');
+            const lines = fileContent.split('\n');
+            const newItems = lines.filter(line => line.trim() !== ''); // Assuming each line is a new item
+            console.log(JSON.stringify(newItems));
+
+      - name: Create Issue
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: New item(s) added to issue.md
+          content-filepath: './Issues.md'
+        if: steps.read_file.outputs.return_value.length > 0  # Only create issue if there are new items
