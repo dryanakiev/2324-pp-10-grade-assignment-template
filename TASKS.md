@@ -4,7 +4,7 @@ Welcome, students! Below are some beginner tasks to get started with your C++ co
 
 ## TODO
 
-- [ ] Set up a new C++ project for the library management system.
+- [x] Set up a new C++ project for the library management system.
 - [ ] Lookup and create files, representing the data models of your system.
 - [ ] Implement a repository class that helps with read/write to the data model files.
 - [ ] Create classes for representing books, library members, and the library itself.
