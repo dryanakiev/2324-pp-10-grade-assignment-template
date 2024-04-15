@@ -1,8 +1,11 @@
 
 
 #include <iostream>
+#include "DatabaseCreation.h"
 
-int main()
+int main(void)
 {
-	std::cout << "Hello World!" << std::endl;
+	sqlConnect();
+
+	return 0;
 }

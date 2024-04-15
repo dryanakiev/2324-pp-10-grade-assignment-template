@@ -26,5 +26,8 @@
     <ClInclude Include="libs\nanodbc\nanodbc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\DatabaseCreation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

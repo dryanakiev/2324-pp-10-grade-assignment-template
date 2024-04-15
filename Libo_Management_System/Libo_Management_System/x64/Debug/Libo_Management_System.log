@@ -1,2 +1,8 @@
 ﻿  Application.cpp
-  Libo_Management_System.vcxproj -> C:\Users\GABI\source\repos\2324-pp-10v-individual-assignment-GGDimitrov21\Libo_Management_System\x64\Debug\Libo_Management_System.exe
+C:\Users\GABI\source\repos\2324-pp-10v-individual-assignment-GGDimitrov21\Libo_Management_System\NanoDBC\src\DatabaseCreation.cpp(9,3): warning C4129: 'S': unrecognized character escape sequence
+  (compiling source file 'src/Application.cpp')
+  
+Application.obj : error LNK2019: unresolved external symbol "public: __cdecl nanodbc::connection::connection(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,long)" (??0connection@nanodbc@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@J@Z) referenced in function "void __cdecl sqlConnect(void)" (?sqlConnect@@YAXXZ)
+Application.obj : error LNK2019: unresolved external symbol "public: __cdecl nanodbc::connection::~connection(void)" (??1connection@nanodbc@@QEAA@XZ) referenced in function "void __cdecl sqlConnect(void)" (?sqlConnect@@YAXXZ)
+Application.obj : error LNK2019: unresolved external symbol "public: bool __cdecl nanodbc::connection::connected(void)const " (?connected@connection@nanodbc@@QEBA_NXZ) referenced in function "void __cdecl sqlConnect(void)" (?sqlConnect@@YAXXZ)
+C:\Users\GABI\source\repos\2324-pp-10v-individual-assignment-GGDimitrov21\Libo_Management_System\x64\Debug\Libo_Management_System.exe : fatal error LNK1120: 3 unresolved externals

@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{D672C7CF-6390-499B-BA7F-AA25C1C2B9A4}|NanoDBC\\NanoDBC.vcxproj|solutionrelative:NanoDBC\\src\\DatabaseCreation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D672C7CF-6390-499B-BA7F-AA25C1C2B9A4}|NanoDBC\\NanoDBC.vcxproj|C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\src\\DatabaseCreation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D672C7CF-6390-499B-BA7F-AA25C1C2B9A4}|NanoDBC\\NanoDBC.vcxproj|solutionrelative:NanoDBC\\src\\DatabaseCreation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D95694B6-F7B1-4244-9AB5-E5ADE660E046}|Libo_Management_System\\Libo_Management_System.vcxproj|C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\Libo_Management_System\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D95694B6-F7B1-4244-9AB5-E5ADE660E046}|Libo_Management_System\\Libo_Management_System.vcxproj|solutionrelative:Libo_Management_System\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D672C7CF-6390-499B-BA7F-AA25C1C2B9A4}|NanoDBC\\NanoDBC.vcxproj|C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\libs\\nanodbc\\nanodbc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D672C7CF-6390-499B-BA7F-AA25C1C2B9A4}|NanoDBC\\NanoDBC.vcxproj|solutionrelative:NanoDBC\\libs\\nanodbc\\nanodbc.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D672C7CF-6390-499B-BA7F-AA25C1C2B9A4}|NanoDBC\\NanoDBC.vcxproj|C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\libs\\nanodbc\\nanodbc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D672C7CF-6390-499B-BA7F-AA25C1C2B9A4}|NanoDBC\\NanoDBC.vcxproj|solutionrelative:NanoDBC\\libs\\nanodbc\\nanodbc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\Libo_Management_System\\src\\Application.cpp",
+              "RelativeDocumentMoniker": "Libo_Management_System\\src\\Application.cpp",
+              "ToolTip": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\Libo_Management_System\\src\\Application.cpp",
+              "RelativeToolTip": "Libo_Management_System\\src\\Application.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-15T21:43:19.233Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,48 +45,22 @@
               "RelativeDocumentMoniker": "NanoDBC\\src\\DatabaseCreation.cpp",
               "ToolTip": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\src\\DatabaseCreation.cpp",
               "RelativeToolTip": "NanoDBC\\src\\DatabaseCreation.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-15T21:51:38.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "nanodbc.h",
-              "DocumentMoniker": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\libs\\nanodbc\\nanodbc.h",
-              "RelativeDocumentMoniker": "NanoDBC\\libs\\nanodbc\\nanodbc.h",
-              "ToolTip": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\libs\\nanodbc\\nanodbc.h",
-              "RelativeToolTip": "NanoDBC\\libs\\nanodbc\\nanodbc.h",
-              "ViewState": "AQIAAJcJAAAAAAAAAAAcwKkJAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-15T21:45:15.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "nanodbc.cpp",
-              "DocumentMoniker": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\libs\\nanodbc\\nanodbc.cpp",
-              "RelativeDocumentMoniker": "NanoDBC\\libs\\nanodbc\\nanodbc.cpp",
-              "ToolTip": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\libs\\nanodbc\\nanodbc.cpp",
-              "RelativeToolTip": "NanoDBC\\libs\\nanodbc\\nanodbc.cpp",
-              "ViewState": "AQIAAAEBAAAAAAAAAAAMwAkBAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-15T21:45:03.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Application.cpp",
-              "DocumentMoniker": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\Libo_Management_System\\src\\Application.cpp",
-              "RelativeDocumentMoniker": "Libo_Management_System\\src\\Application.cpp",
-              "ToolTip": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\Libo_Management_System\\src\\Application.cpp",
-              "RelativeToolTip": "Libo_Management_System\\src\\Application.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-15T21:43:19.233Z",
+              "Title": "DatabaseCreation.h",
+              "DocumentMoniker": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\src\\DatabaseCreation.h",
+              "RelativeDocumentMoniker": "NanoDBC\\src\\DatabaseCreation.h",
+              "ToolTip": "C:\\Users\\GABI\\source\\repos\\2324-pp-10v-individual-assignment-GGDimitrov21\\Libo_Management_System\\NanoDBC\\src\\DatabaseCreation.h",
+              "RelativeToolTip": "NanoDBC\\src\\DatabaseCreation.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-15T22:18:39.99Z",
               "EditorCaption": ""
             }
           ]
