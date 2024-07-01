@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Libo_Management_System"
+    "\\Libo_Management_System",
+    "\\Libo_Management_System\\Libo_Management_System",
+    "\\Libo_Management_System\\Libo_Management_System\\src"
   ],
+  "SelectedNode": "\\Libo_Management_System\\Libo_Management_System\\src\\Application.cpp",
   "PreviewInSolutionExplorer": false
 }
